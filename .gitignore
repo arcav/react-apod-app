@@ -2,6 +2,7 @@
 
 #envoiroment variables
 .env
+.vscode
 # dependencies
 /node_modules
 /.pnp
@@ -11,7 +12,7 @@
 /coverage
 
 # production
-/build
+
 
 # misc
 .DS_Store

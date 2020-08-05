@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.27b5ba17.chunk.css",
+    "main.js": "/static/js/main.899d4e18.chunk.js",
+    "main.js.map": "/static/js/main.899d4e18.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.afc08828.js",
+    "runtime-main.js.map": "/static/js/runtime-main.afc08828.js.map",
+    "static/js/2.e346af71.chunk.js": "/static/js/2.e346af71.chunk.js",
+    "static/js/2.e346af71.chunk.js.map": "/static/js/2.e346af71.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.bd580c4255180f478bf258ad13e2f207.js": "/precache-manifest.bd580c4255180f478bf258ad13e2f207.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.27b5ba17.chunk.css.map": "/static/css/main.27b5ba17.chunk.css.map",
+    "static/media/Index.css": "/static/media/apodBackground.6a6df70d.png",
+    "static/media/nasa.png": "/static/media/nasa.9d97c8ff.png",
+    "static/media/react1.png": "/static/media/react1.80687d23.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.afc08828.js",
+    "static/js/2.e346af71.chunk.js",
+    "static/css/main.27b5ba17.chunk.css",
+    "static/js/main.899d4e18.chunk.js"
+  ]
+}
