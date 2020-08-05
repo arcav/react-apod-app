@@ -1,0 +1,14 @@
+html{
+	height: max-content;	
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background: #010f24 url(./Assets/apodBackground.png) no-repeat fixed  ; 
+	background-size:cover  ; 
+	margin: 0px;
+	width: 100%;
+	height: max-content;	
+}

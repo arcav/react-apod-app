@@ -1,0 +1,19 @@
+.footer{
+	position: relative;;
+	bottom: 0;
+	background-color:  #010f24;	
+	width: 100%;
+	height: 4rem;
+	box-shadow: 0 0 5px 1px rgb(255, 255, 255);	
+	
+}
+
+.footer-items{
+	display:flex;
+	height: 100%;
+	align-items: center;
+	padding: 0 1rem;
+	color:white;
+	font-weight: bold;
+	justify-content: center;	
+}
