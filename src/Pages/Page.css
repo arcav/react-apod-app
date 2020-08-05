@@ -19,6 +19,15 @@
     z-index: 1;
 }
 
+.frame{
+    width:95%;
+    height: 20rem;
+    align-self: center;
+    margin-top: 1rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px 5px white;
+}
+
 h1 {
     margin: 8rem 1rem 0.5rem 1rem;
     text-align: center;
@@ -37,7 +46,7 @@ h2 {
     margin: 1rem 1rem 0rem 1rem;
     text-align: left;
     font-size: 1.5rem;
-    color: white
+    color: white;
 }
 
 h3 {
@@ -59,7 +68,7 @@ p {
 
 .card {
     width: 85%;
-    height: 90%;
+    height: 100%;
     background: linear-gradient(40deg, #010f24, rgba(0, 0, 20, 0.712));
     align-items: center;
     box-shadow: 1px 1px 8px 5px white;
@@ -72,7 +81,7 @@ p {
 
 .container {
     width: 85%;
-    height: 27rem;
+    height: 28rem;
     background: linear-gradient(40deg, #010f24, rgba(0, 0, 20, 0.712));
     align-items: center;
     box-shadow: 1px 1px 8px 5px white;
@@ -85,7 +94,7 @@ p {
 
 @media (min-width: 767px) {
     .card {
-        margin: 4rem 6rem 5rem 3rem;
+        margin: 4rem 6rem 4rem 3rem;
     }
     .container {
         margin: 8rem 0.9rem 5rem 3rem;
@@ -102,6 +111,9 @@ p {
     }
     .container {
         margin: 8rem 0.9rem 2rem 5rem;
+    }
+    .frame{
+        height: 35rem;
     }
 }
 

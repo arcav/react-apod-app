@@ -18,7 +18,7 @@
 
 .side-drawer-logo {
     width: 11rem;
-    margin: 3rem 0 0 3rem;
+    margin: 3rem 0 0 2.9rem;
 }
 
 .side-drawer ul {
@@ -31,7 +31,7 @@
     font-Weight: bold;
     font-size: x-large;
     padding: 0px;
-    margin: 3rem 0 0 6rem;
+    margin: 3rem 0 0 5rem;
 }
 
 .side-drawer li {

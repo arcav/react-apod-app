@@ -26,11 +26,12 @@ const Products = () => {
 							frameBorder="0"
 							allow="autoplay"
 							allowFullScreen
-							className="img"
+							className="frame"
 						/>
 						)};
 				</div>
-				<h2>Author:
+				<h3>Autor:</h3>
+				<h2>
 				{data.copyright}
 				</h2>
 				<h3>Date:

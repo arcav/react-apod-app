@@ -21,10 +21,10 @@ const Home = () => {
                 APP </h1>
             <Link to="/Apod" >
                 <div style={{textAlign: "center"}} >
-                    <img style={{width: "7rem", margin: "5px"}}
+                    <img style={{width: "7rem"}}
                         src={nasa}
                         alt="nasalogo" />
-                    <img style={{width: "7rem", margin: "5px"}}
+                    <img style={{width: "7rem"}}
                         src={react}
                         alt="reactlogo" />
                 </div>
