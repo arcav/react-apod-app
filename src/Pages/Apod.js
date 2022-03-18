@@ -5,7 +5,7 @@ import React from "react";
 import "./Page.css";
 
 //CustomHook
-import useFetch from "../CustomsHooks/useFetch";
+import useFetch from "../Hooks/useFetch";
 
 /* const apiKey= process.env.REACT_APP_NASA_KEY */
 
@@ -15,7 +15,7 @@ const Products = () => {
     );
     console.log(data);
     return (
-        <>
+        <div>
             <h1> {data.title}</h1>
             <div className="card">
                 <div className="img-container">
@@ -43,7 +43,7 @@ const Products = () => {
                 </h3>
                 <p>{data.explanation}</p>
             </div>
-        </>
+        </div>
     );
 };
 export default Products;

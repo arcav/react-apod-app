@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 import Layout from './Components/Layout/Layout';
 
 //Routes
-import Routes from './Routes/Routes';
+import Routes from './Routes/Router';
 
 //Container App: Layout and Routes
 const App = () => {
