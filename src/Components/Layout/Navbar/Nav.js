@@ -9,7 +9,7 @@ import BackDrop from '../SideNav/BackDrop/BackDrop';
 //CSS
 import './NavBar.css';
 
-const Index = () => {
+const Nav = () => {
 	const [sideDrawerOpen, setSideDrawerOpen] = useState(false)
 
 	const drawerToggleClickHandler = () => {
@@ -36,4 +36,4 @@ const Index = () => {
 	);
 };
 
-export default Index;
+export default Nav;

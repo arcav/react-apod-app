@@ -20,7 +20,7 @@ function useFetch(url) {
         getData();
     }, [url]);
 
-    if (!data) return null;
+    if (!data) return null
 
     return data;
 }
