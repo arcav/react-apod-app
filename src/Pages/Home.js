@@ -8,7 +8,7 @@ import react from "../Assets/react1.png";
 
 const Home = () => {
   return (
-    <div className="flex flex-col justify-center align-middle my-24">
+    <div className="flex flex-col justify-center align-middlez my-24">
       <h1 className="text-5xl text-neutral-100 text-center">
         WELCOME <br />
         TO MY REACT <br />

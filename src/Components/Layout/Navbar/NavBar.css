@@ -1,74 +1,35 @@
 .navbar {
-	@apply	w-full h-[90px] fixed shadow-lg shadow-white bg-[#010f24] 
+	@apply  flex w-[100vw] h-[80px] shadow-lg shadow-white bg-[#010f24] align-middle
 }
 
-.navigation{
-	@apply flex h-full align-middle p-6 text-lg
-} 
-	/* display: flex;
-	height: 100%;
-	align-items: center;
-	padding: 0 1rem;
-	font-size: 1.2rem;
-
-	*/
+.navigation {
+	@apply flex text-lg w-full justify-around
+}
 
 .logo {
-	margin: 1rem;	
+	@apply  my-auto ;
 }
-.navbar-logo{
-	width: 5.3rem;
-	margin-top: 5px;
 
 
-}
+
 .logo a {
-	text-decoration: none;
-	color: white;
-	font-size: 2rem;
+	@apply text-red-600
 }
 
 .navigation-items ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	font-Weight: bold;
+	@apply  hidden list-none font-bold md:flex
 }
 
 .navigation-items li {
-	padding: 0 0.5rem;
+	@apply p-2 
 }
 
 .navigation-items a {
-	color: white;
-	text-decoration: none;	
+
+	@apply text-white
 }
 
 .navigation-items a:hover,
 .navigation-items a:active {
-	color:red;
-	border:2px;
-	border-style: solid;
-	border-color:yellow;
-	border-radius: 10px;
-	padding: 4px;
-	background-color:#010f24;
-
-	
-}
-.spacer {
-	flex: 1;
-}
-@media(max-width: 767px) {
-	.navigation-items {
-		display: none;
-	}
-	.navbar-logo{
-		display: flex;
-		padding: 0 0.9rem;
-		margin-left: 13rem;
-
-	}
-	
+	@apply text-red-300 border border-amber-200 rounded-3xl p-3 bg-[#010f24]
 }

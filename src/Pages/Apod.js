@@ -6,7 +6,7 @@ import useFetch from "../Hooks/useFetch";
 
 /* const apiKey= process.env.REACT_APP_NASA_KEY */
 
-const Products = () => {
+const Apod = () => {
   const data = useFetch(
     "https://api.nasa.gov/planetary/apod?api_key=n2RgFYIcMv87DZjsCoAgyaL8lXeenDzWKkFwiptJ"
   );
@@ -42,6 +42,6 @@ const Products = () => {
     </div>
   );
 };
-export default Products;
+export default Apod;
 
-/*  */
+
