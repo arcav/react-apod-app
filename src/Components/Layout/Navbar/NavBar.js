@@ -15,17 +15,18 @@ const NavBar = ({ drawerClickHandler }) => {
   return (
     <header className="navbar">
       <nav className="navigation">
-        <div>
-          <ToogleButton click={drawerClickHandler} />
-        </div>
+        <div className="flex justify-between w-full m-3">
+          <div className="my-auto">
+            <ToogleButton click={drawerClickHandler} />
+          </div>
 
-        <div className="logo">
-          <NavLink to="/">
-            {" "}
-            <img className="navbar-logo" src={nasa} alt="navlogo" />
-          </NavLink>
+          <div className="logo">
+            <NavLink to="/">
+              {" "}
+              <img src={nasa} alt="navlogo" />
+            </NavLink>
+          </div>
         </div>
-        <div className="spacer" />
         <div className="navigation-items">
           <ul>
             <li>

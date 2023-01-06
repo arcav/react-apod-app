@@ -10,11 +10,13 @@ import Nav from "./Navbar/Nav";
 
 const Layout = ({ children }) => {
   return (
-    <>
-      <Nav />
-      <main>{children}</main>
-      <Footer />
-    </>
+    
+      <main>
+        <Nav />
+        <section>{children}</section>
+        <Footer />
+      </main>
+    
   );
 };
 
