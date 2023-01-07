@@ -8,19 +8,27 @@ import react from "../Assets/react1.png";
 
 const Home = () => {
   return (
-    <div className="flex flex-col justify-center align-middlez my-24">
-      <h1 className="text-5xl text-neutral-100 text-center">
+    <div className="flex flex-col">
+     
+      <h1 className="text-3xl text-neutral-100 text-center my-10">
         WELCOME <br />
-        TO MY REACT <br />
-        NASA A.P.O.D <br />
-        APP{" "}
+        
+        
+        {" "}
       </h1>
-      <Link to="/Apod">
-        <div className="flex flex-row justify-center">
-          <img src={nasa} alt="nasalogo" className="w-60 h-60" />
-          <img src={react} alt="reactlogo" />
-        </div>
-      </Link>
+     
+      <div className="flex flex-row justify-center my-10 w-full">
+    
+        <Link to="/Apod">
+          <img
+            src={nasa}
+            alt="nasalogo"
+            className="w-32"
+          />
+        </Link>
+     
+      </div>
+    
     </div>
   );
 };

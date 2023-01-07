@@ -19,7 +19,6 @@ const NavBar = ({ drawerClickHandler }) => {
           <div className="toggle-btn">
             <ToogleButton click={drawerClickHandler} />
           </div>
-
           <div className="logo">
             <NavLink to="/">
               {" "}
