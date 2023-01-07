@@ -27,7 +27,6 @@ const Apod = () => {
               allowFullScreen
             />
           )}
-          ;
         </div>
         <h2 className="text-2xl font-bold">
           Author:
@@ -37,7 +36,9 @@ const Apod = () => {
           Date:
           {data.date}
         </h3>
-        <p className="text-lg font-semibold text-justify my-4">{data.explanation}</p>
+        <p className="text-lg font-semibold text-justify my-4">
+          {data.explanation}
+        </p>
       </div>
     </div>
   );
