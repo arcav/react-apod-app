@@ -1,27 +1,33 @@
-.navbar {
-	@apply  flex w-[100vw] h-[80px] shadow-lg shadow-white bg-[#010f24] align-middle
+.header {
+	@apply flex w-full h-[80px] shadow-lg shadow-white bg-[#010f24]
 }
 
 .navigation {
-	@apply flex text-lg w-full justify-around
+	@apply w-full flex justify-between
+}
+
+.navigation-container {
+	@apply flex justify-between w-[85%] m-auto md:justify-start md:m-auto
+}
+
+.toggle-btn {
+	@apply flex items-center
 }
 
 .logo {
-	@apply  my-auto ;
+	@apply flex items-center w-16 h-16 md:mx-8;
 }
 
-
-
-.logo a {
-	@apply text-red-600
+.navigation-items {
+	@apply hidden md:w-1/4 md:flex md:items-center md:justify-center
 }
 
 .navigation-items ul {
-	@apply  hidden list-none font-bold md:flex
+	@apply flex font-bold w-3/4 justify-between
 }
 
 .navigation-items li {
-	@apply p-2 
+	@apply p-2
 }
 
 .navigation-items a {
@@ -31,5 +37,5 @@
 
 .navigation-items a:hover,
 .navigation-items a:active {
-	@apply text-red-300 border border-amber-200 rounded-3xl p-3 bg-[#010f24]
+	@apply text-red-700 border border-amber-200 rounded-3xl p-3 bg-[#010f24]
 }

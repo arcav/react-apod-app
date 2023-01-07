@@ -13,10 +13,10 @@ import "./NavBar.css";
 
 const NavBar = ({ drawerClickHandler }) => {
   return (
-    <header className="navbar">
+    <header className="header">
       <nav className="navigation">
-        <div className="flex justify-between w-full m-3">
-          <div className="my-auto">
+        <div className="navigation-container">
+          <div className="toggle-btn">
             <ToogleButton click={drawerClickHandler} />
           </div>
 
@@ -27,6 +27,7 @@ const NavBar = ({ drawerClickHandler }) => {
             </NavLink>
           </div>
         </div>
+
         <div className="navigation-items">
           <ul>
             <li>
