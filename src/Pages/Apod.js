@@ -12,10 +12,9 @@ const Apod = () => {
   );
   console.log(data);
   return (
-    <div className="h-full m-3 p-3 text-white">
+    <div className="m-3 p-3 text-white">
       <h1 className="text-center text-3xl font-bold "> {data.title}</h1>
-      <div>
-        <div>
+        
           {data.media_type === "image" ? (
             <img className="rounded-3xl my-6" src={data.url} alt="apod" />
           ) : (
@@ -27,7 +26,7 @@ const Apod = () => {
               allowFullScreen
             />
           )}
-        </div>
+        
         <h2 className="text-2xl font-bold">
           Author:
           {data.copyright}
@@ -40,7 +39,6 @@ const Apod = () => {
           {data.explanation}
         </p>
       </div>
-    </div>
   );
 };
 export default Apod;

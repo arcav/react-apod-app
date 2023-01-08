@@ -19,9 +19,9 @@ function useFetch(url) {
         }
         getData();
     }, [url]);
-
-    if (!data) return null
-
+    
+    
+    if (!data) return <p className="text-white">Fail</p>
     return data;
 }
 
