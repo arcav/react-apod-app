@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
     <>
       <main className="flex flex-col h-full">
         <Nav />
-        <section>{children}</section>
+        <section >{children}</section>
         <Footer />
       </main>
     </>

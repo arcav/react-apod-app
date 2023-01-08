@@ -14,19 +14,19 @@ const Apod = () => {
   return (
     <div className="m-3 p-3 text-white">
       <h1 className="text-center text-3xl font-bold "> {data.title}</h1>
-        
-          {data.media_type === "image" ? (
-            <img className="rounded-3xl my-6" src={data.url} alt="apod" />
-          ) : (
-            <iframe
-              className="rounded-3xl my-6"
-              title="space-video"
-              src={data.url}
-              allow="autoplay"
-              allowFullScreen
-            />
-          )}
-        
+      <div className="md:flex">
+        {data.media_type === "image" ? (
+          <img className="rounded-3xl my-6" src={data.url} alt="apod" />
+        ) : (
+          <iframe
+            className="rounded-3xl my-6"
+            title="space-video"
+            src={data.url}
+            allow="autoplay"
+            allowFullScreen
+          />
+        )}
+
         <h2 className="text-2xl font-bold">
           Author:
           {data.copyright}
@@ -39,6 +39,7 @@ const Apod = () => {
           {data.explanation}
         </p>
       </div>
+    </div>
   );
 };
 export default Apod;
