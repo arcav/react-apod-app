@@ -7,7 +7,6 @@ import SideDrawer from "../SideNav/SideDrawer/SideDrawer";
 import BackDrop from "../SideNav/BackDrop/BackDrop";
 
 //CSS
-import "./NavBar.css";
 
 const Nav = () => {
   const [sideDrawerOpen, setSideDrawerOpen] = useState(false);

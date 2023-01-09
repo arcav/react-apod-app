@@ -2,11 +2,10 @@
 import React from 'react';
 
 //CSS
-import './Backdrop.css';
 
 const backDrop = ({ click }) => {
 	return (
-		<div className="backdrop" onClick={click} />
+		<div className="fixed w-full h-full top-0 left-0 bg-black bg-opacity-80 z-10" onClick={click} />
 	);
 };
 

@@ -1,6 +1,5 @@
 //React
 import React from "react";
-import { Outlet } from "react-router-dom";
 
 //Footer Component
 import Footer from "./Footer/Footer";
@@ -13,7 +12,7 @@ const Layout = ({ children }) => {
     <>
       <main className="flex flex-col">
         <Nav />
-        <section className="my-40">{children}</section>
+        <section className="my-32">{children}</section>
         <Footer />
       </main>
     </>

@@ -6,10 +6,10 @@ import React from "react";
 const About = () => {
   return (
     <div className="flex flex-col h-screen w-11/12 m-auto">
-      <h1 className="text-6xl text-white font-bold text-center my-10"> A.P.O.D </h1>
-      <h3>Astronomy Picture of the Day</h3>
+      <h1 className="text-4xl text-white font-bold text-center mb-4"> A.P.O.D </h1>
+      <h3 className ="text-2xl text-white mb-4 font-semibold">Astronomy Picture of the Day</h3>
       
-        <p className="text-2xl text-white font-bold">
+        <p className="text-lg text-white font-medium">
           {" "}
           One of the most popular websites at NASA is the Astronomy Picture of
           the Day. In fact, this website is one of the most popular websites

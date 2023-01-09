@@ -1,12 +1,10 @@
 //React
 import React from "react";
 
-//CSS
-import "./Footer.css";
 
 const footer = () => {
   return (
-    <footer className="footer">
+    <footer className="bg-[#010f24] h-24 flex text-lg text-white justify-center items-center fixed bottom-0 w-full">
       &copy; {new Date().getFullYear()} Copyright: arc@v
     </footer>
   );
