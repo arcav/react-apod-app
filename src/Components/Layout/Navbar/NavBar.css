@@ -1,6 +1,6 @@
 .header {
-	@apply flex w-full h-[80px] shadow-lg shadow-white bg-[#010f24]
-}
+	@apply flex w-full h-[80px] shadow-lg shadow-white bg-[#010f24] fixed top-0
+} 
 
 .navigation {
 	@apply w-full flex justify-between

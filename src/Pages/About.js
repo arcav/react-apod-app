@@ -5,11 +5,11 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className=" text-2xl text-white font-bold h-screen w-11/12 m-4 p-3 text-justify">
-      <h1 > A.P.O.D </h1>
+    <div className="flex flex-col h-screen w-11/12 m-auto">
+      <h1 className="text-6xl text-white font-bold text-center my-10"> A.P.O.D </h1>
       <h3>Astronomy Picture of the Day</h3>
-      <div className="h-full">
-        <p className="text-lg text-white font-bold">
+      
+        <p className="text-2xl text-white font-bold">
           {" "}
           One of the most popular websites at NASA is the Astronomy Picture of
           the Day. In fact, this website is one of the most popular websites
@@ -21,7 +21,6 @@ const About = () => {
           be used as auto - generated hashtags for twitter or instagram feeds;
           but generally help with discoverability of relevant imagery.
         </p>
-      </div>
     </div>
   );
 };

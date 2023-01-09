@@ -5,22 +5,28 @@ import { useState, useEffect } from "react";
 //Custom Hook For Fetch
 
 function useFetch(url) {
-    const [data, setData] = useState(url);
+  const [loading,setLoading] = useState(false)
+    const [data, setData] = useState(url)
+    const [error,setError] = useState("")
 
     useEffect(() => {
         async function getData() {
+          setLoading(true)
+          setError(false)
             try {
                 const response = await fetch(url);
                 const data = await response.json();
                 setData(data);
+                setLoading(false)
             } catch (e) {
-                console.error(e);
+                setError(e);
+                setLoading(false)
             }
         }
         getData();
     }, [url]);
     
-    return data;
+    return {data,loading,error};
 }
 
 export default useFetch;

@@ -11,9 +11,9 @@ import Nav from "./Navbar/Nav";
 const Layout = ({ children }) => {
   return (
     <>
-      <main className="flex flex-col h-full">
+      <main className="flex flex-col">
         <Nav />
-        <section >{children}</section>
+        <section className="my-40">{children}</section>
         <Footer />
       </main>
     </>
