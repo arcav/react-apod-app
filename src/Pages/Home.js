@@ -8,12 +8,9 @@ import react from "../Assets/react1.png";
 
 const Home = () => {
   return (
-    <div className="flex flex-col">
-     
+    <div className="flex flex-col h-screen justify-center">
       <h1 className="text-3xl text-neutral-100 text-center my-10">
         WELCOME <br />
-        
-        
         {" "}
       </h1>
      

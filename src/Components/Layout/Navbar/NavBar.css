@@ -1,6 +1,6 @@
 .header {
-	@apply flex w-full h-[80px] shadow-lg shadow-white bg-[#010f24]
-}
+	@apply flex w-full h-[80px] shadow-lg shadow-white bg-[#010f24] fixed top-0
+} 
 
 .navigation {
 	@apply w-full flex justify-between
@@ -15,7 +15,7 @@
 }
 
 .logo {
-	@apply flex items-center w-16 h-16 md:mx-8;
+	@apply flex items-center w-14 h-14 md:mx-8;
 }
 
 .navigation-items {
@@ -33,9 +33,4 @@
 .navigation-items a {
 
 	@apply text-white
-}
-
-.navigation-items a:hover,
-.navigation-items a:active {
-	@apply text-red-700 border border-amber-200 rounded-3xl p-3 bg-[#010f24]
 }

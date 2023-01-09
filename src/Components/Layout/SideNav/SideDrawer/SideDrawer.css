@@ -1,62 +1,26 @@
+/* linear-gradient(40deg, #010f24, rgba(0, 0, 20, 0.712)) */
 .side-drawer {
-    height: 100%;
-    background: linear-gradient(40deg, #010f24, rgba(0, 0, 20, 0.712));
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 70%;
-    max-width: 400px;
-    z-index: 200;
-    transform: translateX(-100%);
-    transition: transform 0.5s ease-out;
-    color: white
+    @apply flex flex-col h-full  bg-[#010f24] bg-opacity-75 fixed w-3/4 z-20 text-white transform -translate-x-full transition-all duration-700
 }
 
 .side-drawer.open {
-    transform: translateX(0);
+    @apply translate-x-0;
 }
 
 .side-drawer-logo {
-    width: 11rem;
-    margin: 3rem 0 0 3rem;
+    @apply w-[11rem] m-auto
 }
 
 .side-drawer ul {
-    height: 100%;
-    list-style: none;
-    display: block;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-Weight: bold;
-    font-size: x-large;
-    padding: 0px;
-    margin: 3rem 0 0 6rem;
+    @apply h-full flex flex-col font-bold text-2xl m-auto;
+
 }
 
 .side-drawer li {
-    margin: 0rem 0;
-    padding: 10px;
-}
+    @apply mx-[2rem] my-auto p-5 hover:bg-red-600;
 
-.side-drawer li:hover,
-.side-drawer li:active {
-    color: rgb(226, 223, 223);
 }
 
 .side-drawer a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-}
-
-.side-drawer a:hover,
-.side-drawer a:active {
-    color: red;
-    border: 3px;
-    border-style: solid;
-    border-color: yellow;
-    border-radius: 10px;
-    padding: 6px 20px;
-    font-size: 1.5rem;
-    background-color: #010f24
+    @apply text-white
 }

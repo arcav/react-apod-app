@@ -10,11 +10,13 @@ import Nav from "./Navbar/Nav";
 
 const Layout = ({ children }) => {
   return (
-    <main>
-      <Nav />
-      <section className="h-full">{children}</section>
-      <Footer />
-    </main>
+    <>
+      <main className="flex flex-col">
+        <Nav />
+        <section className="my-40">{children}</section>
+        <Footer />
+      </main>
+    </>
   );
 };
 

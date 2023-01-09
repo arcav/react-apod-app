@@ -18,11 +18,13 @@ const sideDrawer = ({ show, hide }) => {
 
 	return (
 		<nav className={drawerClasses}>
-			<div>
+			<div className='my-20'>
 				<img className="side-drawer-logo"
 					src={nasa}
 					alt="navlogo" />
 			</div>
+			<div className='text-center my-10'>
+
 			<ul onClick={hide}>
 				<li >
 					<NavLink to="/Apod">
@@ -35,6 +37,7 @@ const sideDrawer = ({ show, hide }) => {
 					</NavLink>
 				</li>
 			</ul>
+			</div>
 		</nav>
 	);
 };
