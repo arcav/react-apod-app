@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import { ToogleButton } from "../SideDrawer/ToogleButton";
 //Image
 import nasa from "../../../../Assets/nasa.png";
+import { NavBtn } from "../../Navbar/NavBtn";
 
 export const SideDrawer = ({ isOpen, openHandler }) => {
   return (
@@ -26,23 +27,13 @@ export const SideDrawer = ({ isOpen, openHandler }) => {
       <div className="text-center h-1/3 text-white">
         <ul
           onClick={openHandler}
-          className="h-full flex flex-col font-bold text-2xl justify-evenly "
+          className="h-full w-full flex flex-col font-bold text-2xl justify-evenly "
         >
           <li>
-            <NavLink
-              className="bg-red-700 px-6 py-2 border border-solid rounded-full border-yellow-200 hover:bg-yellow-200 hover:text-red-500 hover:border-red-500 hover:shadow-lg hover:shadow-yellow-200"
-              to={"/Apod"}
-            >
-              A.P.O.D
-            </NavLink>
+            <NavBtn path={"/apod"}>A.P.O.D</NavBtn>
           </li>
           <li>
-            <NavLink
-              className="bg-red-700 px-6 py-2 border border-solid rounded-full border-yellow-200 hover:bg-yellow-200 hover:text-red-500 hover:border-red-500 hover:shadow-lg hover:shadow-yellow-200"
-              to={"/About"}
-            >
-              About
-            </NavLink>
+            <NavBtn path={"/About"}>About</NavBtn>
           </li>
         </ul>
       </div>

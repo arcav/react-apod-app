@@ -7,7 +7,7 @@ export const BackDrop = ({ isOpen }) => {
   return (
     <div
       className={`fixed w-full h-full top-0 left-0 backdrop-blur-sm  ${
-        !isOpen ? "hidden" : ""
+        !isOpen ? "hidden" : null
       }`}
       onClick={() => isOpen}
     />

@@ -55,7 +55,7 @@ export const Apod = () => {
           </div>
         </div>
       ) : (
-        <div className="mt-16">
+        <div>
           <Spinner loading={loading} />
         </div>
       )}

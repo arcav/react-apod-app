@@ -5,49 +5,37 @@ import { NavLink } from "react-router-dom";
 //Componente
 import { ToogleButton } from "../SideNav/SideDrawer/ToogleButton";
 //Images
+import { NavBtn } from "./NavBtn";
+
 import nasa from "../../../Assets/nasa.png";
 
 export const NavBar = ({ isOpen, openHandler }) => {
   return (
     <>
-      <header className="flex w-full h-[80px] shadow-lg shadow-white bg-[#010f24] fixed top-0 ">
-        <nav className="w-full flex justify-between ">
+      <header className="flex w-full h-[80px] shadow-lg shadow-white bg-[#010f24] top-0 sticky">
+        <nav className="w-full flex justify-between">
           <div className="flex justify-between  w-full m-auto md:justify-start md:m-auto ">
             {!isOpen ? (
               <div className="flex items-center mx-7  md:hidden">
                 <ToogleButton openHandler={openHandler} />
               </div>
-            ) : (
-              null
-            )}
-            <div className=" flex  w-16 h-16 mr-8 lg:ml-8">
+            ) : null}
+            <div className="flex  w-16 h-16 mr-8 lg:ml-8">
               {!isOpen ? (
                 <NavLink className="flex items-center" to={"/"}>
                   <img src={nasa} alt="navlogo" />
                 </NavLink>
-              ) : (
-                null
-              )}
+              ) : null}
             </div>
           </div>
 
-          <div className=" hidden w-full md:flex md:text-yellow-300 md:items-center  md:w-1/2 lg:w-1/3 md:justify-center md:font-bold md:text-lg">
+          <div className="hidden w-full md:flex md:text-yellow-300 md:items-center  md:w-1/2 lg:w-1/3 md:justify-center md:font-bold md:text-lg">
             <ul className="flex w-full justify-around">
               <li>
-                <NavLink
-                  className="bg-red-700 px-6 py-2 border border-solid rounded-full border-yellow-200 hover:bg-yellow-200 hover:text-red-500 hover:border-red-500 hover:shadow-lg hover:shadow-yellow-200"
-                  to={"/Apod"}
-                >
-                  A.P.O.D
-                </NavLink>
+                <NavBtn path={"/apod"}>A.P.O.D</NavBtn>
               </li>
               <li>
-                <NavLink
-                  className="bg-red-700 px-6 py-2 border border-solid rounded-full border-yellow-200 hover:bg-yellow-200 hover:text-red-500 hover:border-red-500 hover:shadow-lg hover:shadow-yellow-200"
-                  to={"/About"}
-                >
-                  ABOUT
-                </NavLink>
+                <NavBtn path={"/about"}>ABOUT</NavBtn>
               </li>
             </ul>
           </div>
