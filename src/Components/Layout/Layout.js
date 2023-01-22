@@ -1,22 +1,22 @@
 //React
 import React from "react";
+import { NavLink, Outlet } from "react-router-dom";
+import nasa from "../../Assets/nasa.png";
 
 //Footer Component
 import Footer from "./Footer/Footer";
-
 //Navbar Component
-import Nav from "./Navbar/Nav";
-
-const Layout = ({ children }) => {
+import { NavBar } from "../Layout/Navbar/NavBar";
+import { SideDrawer } from "./SideNav/SideDrawer/SideDrawer";
+import { BackDrop } from "./SideNav/BackDrop/BackDrop";
+export const Layout = ({ isOpen, openHandler, children }) => {
   return (
     <>
-      <main className="flex flex-col">
-        <Nav />
-        <section className="my-32">{children}</section>
-        <Footer />
-      </main>
+      <NavBar isOpen={isOpen} openHandler={openHandler} />
+      <SideDrawer isOpen={isOpen} openHandler={openHandler} />
+      <section >{children}</section>
+      <BackDrop isOpen={isOpen} />
+      <Footer />
     </>
   );
 };
-
-export default Layout;

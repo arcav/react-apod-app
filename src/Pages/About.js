@@ -3,13 +3,13 @@ import React from "react";
 
 //Css
 
-const About = () => {
+export const About = () => {
   return (
-    <div className="flex flex-col h-screen w-11/12 m-auto">
-      <h1 className="text-4xl text-white font-bold text-center mb-4"> A.P.O.D </h1>
-      <h3 className ="text-2xl text-white mb-4 font-semibold">Astronomy Picture of the Day</h3>
+    <div className="flex flex-col h-screen w-11/12 justify-center  mx-auto">
+      <h1 className="text-6xl text-white font-bold text-center  "> A.P.O.D </h1>
+      <h3 className ="text-2xl text-white mt-8 font-bold text-center">Astronomy Picture of the Day</h3>
       
-        <p className="text-lg text-white font-medium">
+        <p className="text-xl text-white font-semibold mt-8 p-4">
           {" "}
           One of the most popular websites at NASA is the Astronomy Picture of
           the Day. In fact, this website is one of the most popular websites
@@ -25,4 +25,3 @@ const About = () => {
   );
 };
 
-export default About;

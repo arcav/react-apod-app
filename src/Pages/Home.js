@@ -5,9 +5,10 @@ import { Link } from "react-router-dom";
 //Images
 import nasa from "../Assets/nasa.png";
 
-const Home = () => {
+export const Home = () => {
+
   return (
-    <div className="flex flex-col h-[95vw] justify-evenly">
+    <div className="flex flex-col h-screen  justify-center m-auto">
       <h1 className="text-4xl text-neutral-100 text-center font-bold">
         WELCOME
       </h1>
@@ -17,11 +18,12 @@ const Home = () => {
           <img
             src={nasa}
             alt="nasalogo"
-            className="w-1/2 m-auto items-center"
+            className="w-1/4 mx-auto my-10 items-center"
           />
         </Link>
       </div>
+     
     </div>
   );
 };
-export default Home;
+

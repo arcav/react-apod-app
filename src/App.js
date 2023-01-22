@@ -1,17 +1,21 @@
-//React and React-Router-Dom
-import React from "react";
-import { Route, Routes } from "react-router-dom";
+import React, { useState } from "react";
+import { Routes, Route, Outlet } from "react-router-dom";
 
 //Components
-import Layout from "./Components/Layout/Layout";
-import Home from "./Pages/Home";
-import About from "./Pages/About";
-import Apod from "./Pages/Apod";
+import { Layout } from "./Components/Layout/Layout";
+import { About } from "./Pages/About";
+import { Apod } from "./Pages/Apod";
+import { Home } from "./Pages/Home";
 
-//Container App: Layout and Routes
 const App = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openHandler = () => {
+    setIsOpen((prev) => !prev);
+  };
+
   return (
-    <Layout>
+    <Layout isOpen={isOpen} openHandler={openHandler}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="apod" element={<Apod />} />
