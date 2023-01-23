@@ -10,7 +10,7 @@ export const Apod = () => {
   const { data, error, loading } = useFetch(
     "https://api.nasa.gov/planetary/apod?api_key=n2RgFYIcMv87DZjsCoAgyaL8lXeenDzWKkFwiptJ"
   );
-  console.log(data);
+  
   return (
     <div className="flex flex-col h-screen mx-auto text-white w-11/12">
       <h1 className="text-center text-3xl font-bold">{data.title}</h1>
@@ -19,7 +19,7 @@ export const Apod = () => {
           {data.media_type === "image" ? (
             <img className="rounded-3xl my-6" src={data.url} alt="apod" />
           ) : (
-            <iframe
+            <iframe start
               className="rounded-3xl my-6"
               title="space-video"
               src={data.url}

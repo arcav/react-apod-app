@@ -18,17 +18,18 @@ export const NavBar = ({ isOpen, openHandler }) => {
                 <ToogleButton openHandler={openHandler} />
               </div>
             )}
+            <div className=" flex  w-16 h-16 ml-8 ">
+              <NavLink className="flex items-center" to="/">
+                <img src={nasa} alt="navlogo" />
+              </NavLink>
+            </div>
           </div>
-          <div className=" flex my-auto mr-4 w-20 h-20 md:hidden ">
-            <NavLink className="flex items-center" to="/">
-              <img src={nasa} alt="navlogo" />
-            </NavLink>
-          </div>
-          <div className=" hidden md:flex md:text-yellow-300 md:items-center  md:w-1/3 md:justify-center md:font-bold md:text-lg">
+
+          <div className=" hidden w-full md:flex md:text-yellow-300 md:items-center  md:w-1/2 lg:w-1/3 md:justify-center md:font-bold md:text-lg">
             <ul className="flex w-full justify-around">
               <li>
                 <NavLink
-                  className="bg-red-700 px-6 py-2 border border-solid rounded-full border-yellow-200 "
+                  className="bg-red-700 px-6 py-2 border border-solid rounded-full border-yellow-200 hover:bg-yellow-200 hover:text-red-500 hover:border-red-500 hover:shadow-lg hover:shadow-yellow-200"
                   to="/Apod"
                 >
                   A.P.O.D
@@ -36,7 +37,7 @@ export const NavBar = ({ isOpen, openHandler }) => {
               </li>
               <li>
                 <NavLink
-                  className="bg-red-700 px-6 py-2 border border-solid rounded-full border-yellow-200 "
+                  className="bg-red-700 px-6 py-2 border border-solid rounded-full border-yellow-200 hover:bg-yellow-200 hover:text-red-500 hover:border-red-500 hover:shadow-lg hover:shadow-yellow-200"
                   to="/About"
                 >
                   ABOUT

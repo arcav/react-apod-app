@@ -6,7 +6,7 @@ import React from "react";
 export const BackDrop = ({ isOpen }) => {
   return (
     <div
-      className={`fixed w-full h-full top-0 left-0 bg-black bg-opacity-80 -z-10 ${
+      className={`fixed w-full h-full top-0 left-0 backdrop-blur-sm ${
         !isOpen && "hidden"
       }`}
       onClick={isOpen}

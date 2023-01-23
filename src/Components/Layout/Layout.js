@@ -14,7 +14,7 @@ export const Layout = ({ isOpen, openHandler, children }) => {
     <>
       <NavBar isOpen={isOpen} openHandler={openHandler} />
       <SideDrawer isOpen={isOpen} openHandler={openHandler} />
-      <section >{children}</section>
+      <section className="m-auto flex" >{children}</section>
       <BackDrop isOpen={isOpen} />
       <Footer />
     </>

@@ -13,7 +13,7 @@ export const ToogleButton = ({ isOpen, openHandler }) => {
       ) : (
         <BiX
           onClick={openHandler}
-          className="w-14 h-14 text-white cursor-pointer"
+          className="w-14 h-14 text-white cursor-pointer flex justify-end m-4 fixed"
         />
       )}
     </>

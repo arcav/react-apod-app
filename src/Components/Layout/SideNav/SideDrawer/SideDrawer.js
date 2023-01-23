@@ -15,22 +15,34 @@ export const SideDrawer = ({ isOpen, openHandler }) => {
       <div className="flex justify-end">
         {isOpen && <ToogleButton isOpen={isOpen} openHandler={openHandler} />}
       </div>
-      <div className="flex">
-        <img className="w-[11rem] m-auto" src={nasa} alt="navlogo" />
+      
+        <div className="flex justify-center">
+          <img className="w-[8rem] mt-20" src={nasa} alt="navlogo" />
+        </div>
+        <div className="text-center h-1/3 text-white">
+          <ul
+            onClick={openHandler}
+            className="h-full flex flex-col font-bold text-2xl justify-evenly "
+          >
+            <li>
+              <NavLink
+                className="bg-red-700 px-6 py-2 border border-solid rounded-full border-yellow-200 hover:bg-yellow-200 hover:text-red-500 hover:border-red-500 hover:shadow-lg hover:shadow-yellow-200"
+                to="/Apod"
+              >
+                A.P.O.D
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                className="bg-red-700 px-6 py-2 border border-solid rounded-full border-yellow-200 hover:bg-yellow-200 hover:text-red-500 hover:border-red-500 hover:shadow-lg hover:shadow-yellow-200"
+                to="/About"
+              >
+                About
+              </NavLink>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div className="text-center my-10  text-white">
-        <ul
-          onClick={openHandler}
-          className="h-full flex flex-col font-bold text-2xl m-auto "
-        >
-          <li className="mx-[2rem] my-auto p-5 hover:bg-red-600">
-            <NavLink to="/Apod">A.P.O.D</NavLink>
-          </li>
-          <li>
-            <NavLink to="/About">About</NavLink>
-          </li>
-        </ul>
-      </div>
-    </div>
+    
   );
 };
