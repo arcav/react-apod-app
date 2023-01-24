@@ -8,7 +8,7 @@ import nasa from "../Assets/nasa.png";
 export const Home = () => {
 
   return (
-    <div className="flex flex-col h-screen  justify-center m-auto">
+    <div className="flex flex-col h-screen  justify-center m-auto transition-all duration-200">
       <h1 className="text-4xl text-neutral-100 text-center font-bold">
         WELCOME
       </h1>

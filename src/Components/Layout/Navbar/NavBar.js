@@ -13,15 +13,21 @@ export const NavBar = ({ isOpen, openHandler }) => {
       <header className="flex w-full h-[80px] shadow-lg shadow-white bg-[#010f24] fixed top-0 ">
         <nav className="w-full flex justify-between ">
           <div className="flex justify-between  w-full m-auto md:justify-start md:m-auto ">
-            {!isOpen && (
-              <div className="flex items-center mx-7 md:hidden">
+            {!isOpen ? (
+              <div className="flex items-center mx-7  md:hidden">
                 <ToogleButton openHandler={openHandler} />
               </div>
+            ) : (
+              null
             )}
-            <div className=" flex  w-16 h-16 ml-8 ">
-              <NavLink className="flex items-center" to="/">
-                <img src={nasa} alt="navlogo" />
-              </NavLink>
+            <div className=" flex  w-16 h-16 mr-8 lg:ml-8">
+              {!isOpen ? (
+                <NavLink className="flex items-center" to={"/"}>
+                  <img src={nasa} alt="navlogo" />
+                </NavLink>
+              ) : (
+                null
+              )}
             </div>
           </div>
 
@@ -30,7 +36,7 @@ export const NavBar = ({ isOpen, openHandler }) => {
               <li>
                 <NavLink
                   className="bg-red-700 px-6 py-2 border border-solid rounded-full border-yellow-200 hover:bg-yellow-200 hover:text-red-500 hover:border-red-500 hover:shadow-lg hover:shadow-yellow-200"
-                  to="/Apod"
+                  to={"/Apod"}
                 >
                   A.P.O.D
                 </NavLink>
@@ -38,7 +44,7 @@ export const NavBar = ({ isOpen, openHandler }) => {
               <li>
                 <NavLink
                   className="bg-red-700 px-6 py-2 border border-solid rounded-full border-yellow-200 hover:bg-yellow-200 hover:text-red-500 hover:border-red-500 hover:shadow-lg hover:shadow-yellow-200"
-                  to="/About"
+                  to={"/About"}
                 >
                   ABOUT
                 </NavLink>

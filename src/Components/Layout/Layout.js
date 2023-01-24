@@ -1,7 +1,5 @@
 //React
 import React from "react";
-import { NavLink, Outlet } from "react-router-dom";
-import nasa from "../../Assets/nasa.png";
 
 //Footer Component
 import Footer from "./Footer/Footer";
@@ -14,7 +12,7 @@ export const Layout = ({ isOpen, openHandler, children }) => {
     <>
       <NavBar isOpen={isOpen} openHandler={openHandler} />
       <SideDrawer isOpen={isOpen} openHandler={openHandler} />
-      <section className="m-auto flex" >{children}</section>
+      <section className="h-fit flex flex-col my-16 ">{children}</section>
       <BackDrop isOpen={isOpen} />
       <Footer />
     </>
