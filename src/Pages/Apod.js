@@ -9,6 +9,7 @@ import { Date } from "../Components/Date/Date";
 
 //CustomHook
 import useFetch from "../Hooks/useFetch";
+import { AstroPic } from "../Components/AstroPic/AstroPic";
 
 /* const apiKey= process.env.REACT_APP_NASA_KEY */
 
@@ -26,10 +27,10 @@ export const Apod = () => {
           <div className="h-full ">
             <div className="object-scale-down">
               {data.media_type === "image" ? (
-                <img
+                <AstroPic
                   className="rounded-3xl my-2 w-1/2 m-auto"
-                  src={data.url}
                   alt="apod"
+                  pic={data.url}
                 />
               ) : (
                 <iframe
