@@ -5,13 +5,12 @@ import { Link } from "react-router-dom";
 //Images
 import nasa from "../Assets/nasa.png";
 
-export const Home = () => {
+import { PageName } from "../Components/PageName/PageName";
 
+export const Home = () => {
   return (
     <div className="flex flex-col h-screen  justify-center m-auto">
-      <h1 className="text-4xl text-neutral-100 text-center font-bold">
-        WELCOME
-      </h1>
+      <PageName>WELCOME</PageName>
 
       <div className="flex flex-col">
         <Link to="/Apod">
@@ -22,8 +21,6 @@ export const Home = () => {
           />
         </Link>
       </div>
-     
     </div>
   );
 };
-
