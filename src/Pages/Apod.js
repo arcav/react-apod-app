@@ -12,12 +12,11 @@ import { AstroPic } from "../Components/AstroPic/AstroPic";
 import { AstroFrame } from "../Components/AstroFrame/AstroFrame";
 import { Title } from "../Components/Title/Title";
 
-/* const apiKey= process.env.REACT_APP_NASA_KEY */
+const apiKey = process.env.REACT_APP_NASA_KEY;
+const URL = process.env.NASA_URL;
 
 export const Apod = () => {
-  const { data, error, loading } = useFetch(
-    "https://api.nasa.gov/planetary/apod?api_key=n2RgFYIcMv87DZjsCoAgyaL8lXeenDzWKkFwiptJ"
-  );
+  const { data, error, loading } = useFetch(`${URL}${apiKey}`);
 
   return (
     <>
