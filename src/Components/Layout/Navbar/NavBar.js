@@ -28,13 +28,13 @@ export const NavBar = ({ isOpen, openHandler }) => {
               ) : null}
             </div>
           </div>
-
-          <div className="hidden w-full md:flex md:text-yellow-300 md:items-center  md:w-1/2 lg:w-1/3 md:justify-center md:font-bold md:text-lg">
+ 
+          <div className="hidden w-full md:flex md:text-yellow-300 md:items-center md:mr-6 md:w-1/2 lg:w-1/3 md:justify-center md:font-bold md:text-lg">
             <ul className="flex w-full justify-around">
-              <li>
+              <li className="w-1/2">
                 <NavBtn path={"/apod"}>A.P.O.D</NavBtn>
               </li>
-              <li>
+              <li className="w-1/2">
                 <NavBtn path={"/about"}>ABOUT</NavBtn>
               </li>
             </ul>

@@ -24,16 +24,16 @@ export const SideDrawer = ({ isOpen, openHandler }) => {
       <div className="flex justify-center">
         <img className="w-[8rem] mt-20" src={nasa} alt="navlogo" />
       </div>
-      <div className="text-center h-1/3 text-white">
+      <div className="text-center h-1/3  text-white">
         <ul
           onClick={openHandler}
-          className="h-full w-full flex flex-col font-bold text-2xl justify-evenly "
+          className="h-full flex flex-col font-bold text-2xl justify-evenly "
         >
           <li>
             <NavBtn path={"/apod"}>A.P.O.D</NavBtn>
           </li>
           <li>
-            <NavBtn path={"/About"}>About</NavBtn>
+            <NavBtn path={"/about"}>About</NavBtn>
           </li>
         </ul>
       </div>
