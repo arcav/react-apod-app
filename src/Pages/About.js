@@ -9,13 +9,13 @@ import { SubTitle } from "../Components/SubTitle/SubTitle";
 export const About = () => {
   return (
     <div className="flex flex-col h-screen justify-center items-center m-auto">
-      <div className="bg-red-500">
+      <div>
         <PageName>APOD</PageName>
       </div>
-      <div className="bg-green-500">
+      <div>
         <SubTitle>Astronomy Picture Of The Day</SubTitle>
       </div>
-      <div className="bg-blue-400">
+      <div>
         <Content>
           One of the most popular websites at NASA is the Astronomy Picture of
           the Day. In fact, this website is one of the most popular websites
