@@ -4,12 +4,13 @@ import { Author } from "../Components/Author/Author";
 import { Content } from "../Components/Content/Content";
 import { Error } from "../Components/Error/Error";
 import { Spinner } from "../Components/Spinner/Spinner";
-import { SubTitle } from "../Components/SubTitle/SubTitle";
 import { Date } from "../Components/Date/Date";
 
 //CustomHook
 import useFetch from "../Hooks/useFetch";
 import { AstroPic } from "../Components/AstroPic/AstroPic";
+import { AstroFrame } from "../Components/AstroFrame/AstroFrame";
+import { Title } from "../Components/Title/Title";
 
 /* const apiKey= process.env.REACT_APP_NASA_KEY */
 
@@ -23,24 +24,13 @@ export const Apod = () => {
       {error && <Error error={error} />}
       {data ? (
         <div className="flex flex-col m-auto my-10 text-white w-11/12">
-          <h1 className="text-center text-3xl font-bold">{data.title}</h1>
+          <Title>{data.title}</Title>
           <div className="h-full ">
             <div className="object-scale-down">
               {data.media_type === "image" ? (
-                <AstroPic
-                  className="rounded-3xl my-2 w-1/2 m-auto"
-                  alt="apod"
-                  pic={data.url}
-                />
+                <AstroPic pic={data.url} />
               ) : (
-                <iframe
-                  start="true"
-                  className="rounded-3xl my-2"
-                  title="space-video"
-                  src={data.url}
-                  allow="autoplay"
-                  allowFullScreen
-                />
+                <AstroFrame dataUrl={data.url} />
               )}
             </div>
             <div className="object-contain mb-4">
