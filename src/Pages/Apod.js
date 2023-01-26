@@ -10,7 +10,7 @@ import useFetch from "../Hooks/useFetch";
 
 export const Apod = () => {
   const { data, error, loading } = useFetch(
-    "https://api.nasa.gov/planetary/apod?api_key=n2RgFYIcMv87DZjsCoAgyaL8lXeenDzWKkFwiptJ"
+    'https://api.nasa.gov/planetary/apod?api_key=n2RgFYIcMv87DZjsCoAgyaL8lXeenDzWKkFwiptJ'
   );
 
   return (
