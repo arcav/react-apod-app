@@ -20,12 +20,12 @@ export const Apod = () => {
 
   return (
     <>
-      {error && <Error error={error} />}
+      {error ? <Error error={error} /> : null}
       {data ? (
         <div className="flex flex-col m-auto my-10 text-white w-11/12">
           <Title>{data.title}</Title>
           <div className="h-full ">
-            <div className="object-scale-down">
+            <div className="object-fill">
               {data.media_type === "image" ? (
                 <AstroPic pic={data.url} />
               ) : (
@@ -33,18 +33,9 @@ export const Apod = () => {
               )}
             </div>
             <div className="object-contain mb-4">
-              <Author>
-                Author:
-                {data.copyright}
-              </Author>
-              <Date>
-                Date:
-                {data.date}
-              </Date>
-              <Content>
-                Explanation
-                {data.explanation}
-              </Content>
+              <Author>{data.copyright}</Author>
+              <Date>{data.date}</Date>
+              <Content>{data.explanation}</Content>
             </div>
           </div>
         </div>
