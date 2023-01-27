@@ -13,7 +13,7 @@ import { AstroFrame } from "../Components/AstroFrame/AstroFrame";
 import { Title } from "../Components/Title/Title";
 
 const APIKEY = process.env.REACT_APP_API_KEY;
-const URL = process.env.REACT_APP_URL;
+const URL = process.env.REACT_APP_API_BASE_URL;
 
 export const Apod = () => {
   const { data, error, loading } = useFetch(`${URL}${APIKEY}`);
