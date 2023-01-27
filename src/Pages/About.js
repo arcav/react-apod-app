@@ -8,8 +8,8 @@ import { PageName } from "../Components/PageName/PageName";
 import { SubTitle } from "../Components/SubTitle/SubTitle";
 export const About = () => {
   return (
-    <div className="flex flex-col h-screen justify-center items-center m-auto">
-      <div>
+    <div className="flex flex-col h-full justify-items-start m-auto w-11/12 md:h-screen">
+      <div className="mt-10">
         <PageName>APOD</PageName>
       </div>
       <div>
