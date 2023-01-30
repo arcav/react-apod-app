@@ -18,7 +18,7 @@ const App = () => {
     <Layout isOpen={isOpen} openHandler={openHandler}>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="apod" element={<Apod />} />
+        <Route path="apod" element={<Apod isOpen={isOpen} openHandler={openHandler}/>} />
         <Route path="about" element={<About />} />
       </Routes>
     </Layout>

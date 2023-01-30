@@ -25,7 +25,7 @@ export const Apod = () => {
   return (
     <>
       {loading ? <Spinner loading={loading} /> : null}
-      {error ? <Error error={error} /> : null}
+      {error ? <Error error={error} onClick={showImageHandler} /> : null}
       {data && (
         <div className="flex flex-col m-auto my-10 text-white w-11/12">
           <Title>{data.title}</Title>
