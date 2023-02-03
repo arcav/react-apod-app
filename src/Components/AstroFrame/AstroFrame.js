@@ -1,6 +1,6 @@
 import React from "react";
 
-export const AstroFrame = ({ children, dataUrl }) => {
+export const AstroFrame = ({ dataUrl }) => {
   return (
     <iframe
       start="true"
