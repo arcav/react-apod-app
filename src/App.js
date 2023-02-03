@@ -9,16 +9,22 @@ import { Home } from "./Pages/Home";
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [show, setShow] = useState(false);
 
   const openHandler = () => {
     setIsOpen((prev) => !prev);
+  };
+
+  const showHandler = () => {
+    setShow((prev) => !prev);
+    console.log(show);
   };
 
   return (
     <Layout isOpen={isOpen} openHandler={openHandler}>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="apod" element={<Apod isOpen={isOpen} openHandler={openHandler}/>} />
+        <Route path="apod" element={<Apod show={show} setShow={showHandler} />} />
         <Route path="about" element={<About />} />
       </Routes>
     </Layout>
