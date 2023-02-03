@@ -1,5 +1,5 @@
 //React
-import React from "react";
+import React, { useState } from "react";
 import { Author } from "../Components/Author/Author";
 import { Content } from "../Components/Content/Content";
 import { Error } from "../Components/Error/Error";
@@ -15,17 +15,13 @@ import { Title } from "../Components/Title/Title";
 const APIKEY = process.env.REACT_APP_API_KEY;
 const URL = process.env.REACT_APP_API_BASE_URL;
 
-export const Apod = () => {
+export const Apod = ({ show, setShow }) => {
   const { data, error, loading } = useFetch(`${URL}${APIKEY}`);
-
-  const showImageHandler = () => {
-    console.log("click");
-  };
 
   return (
     <>
       {loading ? <Spinner loading={loading} /> : null}
-      {error ? <Error error={error} onClick={showImageHandler} /> : null}
+      {error ? <Error error={error} /> : null}
       {data && (
         <div className="flex flex-col m-auto my-10 text-white w-11/12">
           <Title>{data.title}</Title>
@@ -37,6 +33,7 @@ export const Apod = () => {
                 <AstroFrame dataUrl={data.url} />
               )}
             </div>
+
             <div className="object-contain mb-4">
               <Author>{data.copyright}</Author>
               <Date>{data.date}</Date>
