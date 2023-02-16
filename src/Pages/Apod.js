@@ -1,5 +1,4 @@
 //React
-import React, { useState } from "react";
 import { Author } from "../Components/Author/Author";
 import { Content } from "../Components/Content/Content";
 import { Error } from "../Components/Error/Error";
@@ -8,10 +7,13 @@ import { Date } from "../Components/Date/Date";
 
 //CustomHook
 import useFetch from "../Hooks/useFetch";
+
+//Components
 import { AstroPic } from "../Components/AstroPic/AstroPic";
 import { AstroFrame } from "../Components/AstroFrame/AstroFrame";
 import { Title } from "../Components/Title/Title";
 
+//ENV 
 const APIKEY = process.env.REACT_APP_API_KEY;
 const URL = process.env.REACT_APP_API_BASE_URL;
 
